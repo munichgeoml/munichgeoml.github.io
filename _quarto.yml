@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - assets/**
+
+website:
+  title: "Munich Geometric ML"
+  favicon: assets/icosahedron.png
+  navbar:
+    logo: assets/icosahedron.png
+    logo-href: index.qmd
+    left:
+      # - href: index.qmd
+      #  text: Home
+      - href: program.qmd
+        text: Program
+      - href: speakers.qmd
+        text: Speakers
+      - href: people.qmd
+        text: People
+      - href: venue.qmd
+        text: Venue
+      - href: register.qmd
+        text: Register
+  page-footer:
+    left: "Geometric Viewpoints on Learning, Data, and Neural Networks"
+    right: "2026 Munich"
+
+
+format:
+  html:
+    include-in-header:
+      text: |
+        <meta name="robots" content="noindex, nofollow">
+    theme:
+      - cosmo
+      - custom.scss
+    toc: false
+    page-layout: full
+

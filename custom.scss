@@ -1,0 +1,576 @@
+/*-- scss:defaults --*/
+
+// Typography
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+$font-family-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+  monospace;
+
+$headings-font-weight: 650;
+$headings-line-height: 1.15;
+
+// Colors
+$body-bg: #fbfaf7;
+$body-color: #1f2933;
+$link-color: #315f6b;
+$link-hover-color: #1f4752;
+
+// $navbar-bg: #fbfaf7;
+// $navbar-fg: #1f2933;
+// $navbar-hl: #315f6b;
+
+$navbar-bg: #1f1b29;
+$navbar-fg: #d1d0c9;
+$navbar-hl: #ffc285;
+
+$footer-bg: #fbfaf7;
+$footer-fg: #4b5563;
+
+// Code
+$code-bg: #f2f0eb;
+$code-color: #334155;
+
+
+/*-- scss:rules --*/
+
+/* General page */
+
+body {
+  background: $body-bg;
+  color: $body-color;
+  letter-spacing: -0.005em;
+}
+
+main {
+  font-size: 1.02rem;
+}
+
+main.content {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#quarto-content {
+  padding-top: 0;
+}
+
+#quarto-document-content {
+  padding-top: 0;
+}
+
+
+a {
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid rgba(31, 41, 51, 0.10);
+}
+
+p {
+  line-height: 1.65;
+}
+
+
+/* Navbar */
+
+.navbar {
+  border-bottom: 1px solid rgba(31, 41, 51, 0.08);
+  box-shadow: 0 4px 20px rgba(31, 41, 51, 0.035);
+}
+
+.navbar-title {
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 400;
+}
+
+.navbar {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  min-height: unset;
+}
+
+.navbar-brand,
+.navbar-title {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link {
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+  font-size: 1.1rem;
+}
+
+
+/* Hide default Quarto title block on landing-style pages */
+
+.quarto-title-block {
+  display: none;
+}
+
+
+/* Hero banner */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  padding: 6rem max(1.5rem, calc((100vw - 1100px) / 2)) 5rem;
+
+  background:
+    linear-gradient(
+      rgba(240, 240, 250, 0.1),
+      rgba(50, 50, 248, 0.22)
+    ),
+    url("assets/marienplatz_bw_blur.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-bottom: 0px solid rgba(31, 41, 51, 0.08);
+}
+
+
+.hero::after {
+  z-index: 0;
+
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(255, 255, 255, 0.45),
+      transparent 34%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.45)
+    );
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  max-width: 980px;
+  margin: 0 0 1.25rem 0;
+  font-size: clamp(2.35rem, 5.2vw, 4.8rem);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+  font-weight: 600;
+  color: #17212b;
+}
+
+.hero .subtitle {
+  max-width: 780px;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.55;
+  color: #4b5563;
+}
+
+.hero .meta {
+  margin-top: 1.6rem;
+  font-size: 1.02rem;
+  font-weight: 650;
+  color: #263442;
+}
+
+
+/* Small pills / labels */
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid rgba(49, 95, 107, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.65);
+  color: #315f6b;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+
+/* Card grid */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 2.25rem 0;
+}
+
+.info-card {
+  padding: 1.25rem 1.3rem;
+  border: 1px solid rgba(31, 41, 51, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 10px 28px rgba(31, 41, 51, 0.055);
+}
+
+.info-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.55rem;
+  font-size: 1.05rem;
+  letter-spacing: -0.015em;
+}
+
+.info-card p {
+  margin-bottom: 0;
+  // color: #4b5563;
+  line-height: 1.55;
+}
+
+
+/* Speaker cards */
+
+.speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.speaker-card {
+  padding: 1.2rem 1.25rem;
+  border-radius: 18px;
+  border: 1px solid rgba(31, 41, 51, 0.08);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 8px 24px rgba(31, 41, 51, 0.05);
+}
+
+.speaker-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+}
+
+.speaker-card .affiliation {
+  margin-bottom: 0.85rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.speaker-card .talk-title {
+  font-weight: 650;
+  color: #1f2933;
+}
+
+
+/* Program tables */
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+thead th {
+  border-bottom: 1px solid rgba(31, 41, 51, 0.16);
+  color: #374151;
+  font-weight: 650;
+}
+
+tbody tr {
+  border-bottom: 1px solid rgba(31, 41, 51, 0.08);
+}
+
+tbody td {
+  vertical-align: top;
+}
+
+.program-table table,
+.schedule-table table {
+  font-size: 0.96rem;
+}
+
+.program-table td:first-child,
+.schedule-table td:first-child {
+  white-space: nowrap;
+  font-weight: 650;
+  color: #374151;
+}
+
+
+/* Callouts */
+
+.callout {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.callout-note {
+  border-left-color: #315f6b;
+}
+
+
+/* Buttons / links styled as buttons */
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  background: #315f6b;
+  color: white !important;
+  font-weight: 650;
+  text-decoration: none;
+  box-shadow: 0 8px 22px rgba(49, 95, 107, 0.20);
+}
+
+.button-link:hover {
+  background: #244b55;
+  color: white !important;
+  text-decoration: none;
+}
+
+.button-link.secondary {
+  background: rgba(255, 255, 255, 0.75);
+  color: #315f6b !important;
+  border: 1px solid rgba(49, 95, 107, 0.24);
+  box-shadow: none;
+}
+
+.button-link.secondary:hover {
+  background: rgba(49, 95, 107, 0.08);
+}
+
+
+/* Footer */
+
+.nav-footer {
+  border-top: 1px solid rgba(31, 41, 51, 0.08);
+  color: #6b7280;
+}
+
+
+/* Images */
+
+img {
+  border-radius: 12px;
+}
+
+
+/* Mobile adjustments */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    // padding-top: 0.4rem;
+    // padding-bottom: 0.4rem;
+  }
+
+  .navbar-brand {
+    // max-width: calc(100% - 4rem); // leave room for menu button
+    white-space: normal;
+  }
+
+  .navbar-title {
+    // max-width: 9rem; // adjust until it breaks where desired
+    // white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.1;
+    font-size: .9rem;
+  }
+
+  .hero {
+    // width: auto;
+    padding: 4.2rem 1rem 3.6rem 1rem;
+    // margin: -2rem -2rem 2rem -1rem;
+    background-position: center top;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.1rem, 10vw, 3.3rem);
+  }
+
+  .hero .subtitle {
+    font-size: 1.05rem;
+  }
+
+  .card-grid,
+  .speaker-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .program-table table,
+  .schedule-table table {
+    font-size: 0.9rem;
+  }
+}
+
+/* Schedule page */
+
+.schedule-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 2rem 0 3rem 0;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 5.5rem repeat(3, minmax(15rem, 1fr));
+
+  /*
+    Row 1: headers.
+    Rows 2--29: 15-minute intervals from 10:00 to 17:00.
+    Row line 2 = 10:00.
+    Row line 3 = 10:15.
+    Row line 4 = 10:30.
+    ...
+    Row line 30 = 17:00.
+  */
+  // grid-template-rows: auto repeat(28, minmax(1.25rem, auto));
+  grid-template-rows: auto repeat(41, 1.2rem);
+
+  column-gap: 0.8rem;
+  row-gap: 0.35rem;
+
+  min-width: 900px;
+  position: relative;
+}
+
+.schedule-corner {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 1.75rem 2.5rem;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: #6b7280;
+}
+
+.day-header {
+  grid-row: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 14px;
+  background: rgba(49, 95, 107, 0.10);
+  border: 0px solid rgba(49, 95, 107, 0.15);
+  text-align: center;
+  line-height: 1.35;
+}
+
+.time-label {
+  grid-column: 1;
+  align-self: start;
+  padding-right: 0.75rem;
+  transform: translateY(-0.35rem);
+  text-align: right;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.schedule-event {
+  padding: 0.5rem 0.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(31, 41, 51, 0.10);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 8px 22px rgba(31, 41, 51, 0.045);
+  font-size: 0.92rem;
+  line-height: 1.35;
+  overflow: hidden;
+}
+
+.schedule-event strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #1f2933;
+}
+
+.schedule-event.talk {
+  border-left: 4px solid rgba(49, 95, 107, 0.65);
+}
+
+.schedule-event.tutorial {
+  border-left: 4px solid rgba(80, 70, 130, 0.65);
+  background: rgba(248, 247, 255, 0.82);
+}
+
+.schedule-event.discussion {
+  border-left: 4px solid rgba(80, 70, 130, 0.65);
+  background: rgba(248, 247, 255, 0.82);
+}
+
+.schedule-event.coffee {
+  border-left: 4px solid rgba(71,37,11, 0.55);
+  background: rgba(255, 250, 240, 0.82);
+}
+
+.schedule-event.lunch {
+  border-left: 4px solid rgba(120, 120, 120, 0.45);
+  background: rgba(248, 248, 246, 0.75);
+  color: #4b5563;
+}
+
+/* Mobile: keep timetable scrollable instead of crushing columns */
+
+@media (max-width: 768px) {
+  .schedule-wrap {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100vw;
+  }
+
+  .schedule-grid {
+    min-width: 850px;
+  }
+}
+
+/* organizers */
+
+.organizer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.organizer-card {
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.organizer-card p {
+  margin-bottom: 0.35rem;
+}

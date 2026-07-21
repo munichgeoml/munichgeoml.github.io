@@ -1,0 +1,52 @@
+---
+title: "Speakers"
+page-layout: full
+---
+
+::: {.hero}
+## Speakers
+:::
+
+
+::: {.organizer-grid}
+
+::: {.organizer-card}
+[**Benedikt Brantner**](https://www.ipp.mpg.de/4106005/gspm){target="_blank"}<br>
+Max Planck Institute for Plasma Physics<br>
+:::
+
+
+::: {.organizer-card}
+[**Georg Bökman**](https://georg-bn.github.io/){target="_blank"}<br>
+University of Amsterdam<br>
+:::
+
+::: {.organizer-card}
+[**Jakob Skarby**](https://www.jacobskarby.com/){target="_blank"}<br>
+Technical University of Munich<br>
+:::
+
+::: {.organizer-card}
+[**Moritz Stargalla**](https://www.utn.de/person/moritz-stargalla/){target="_blank"}<br>
+University of Technology Nuremberg<br>
+:::
+
+::: {.organizer-card}
+[**Pascal Esser**](https://www.ed.math.lmu.de/m/math4ai/en/members/contact-page/pascal-esser-032dce3b.html){target="_blank"}<br>
+LMU Munich<br>
+:::
+
+::: {.organizer-card}
+[**Simon Weinzierl**](https://www.mathematik.uni-muenchen.de/~weinzier/){target="_blank"}<br>
+LMU Munich<br>
+:::
+
+::: {.organizer-card}
+[**Thomas Dages**](https://cvg.cit.tum.de/members/dagt){target="_blank"}<br>
+Technical University of Munich<br>
+:::
+
+
+
+
+:::

@@ -1,0 +1,16 @@
+---
+title: "Registration"
+page-layout: full
+---
+
+::: {.hero}
+## Registration
+:::
+
+
+<br>
+
+If you wish to participate, please [register](https://forms.gle/qEqezs4ckctX8rxX7){target="_blank"}
+by fillout out the form (*not for speakers*).
+
+

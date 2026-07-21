@@ -1,0 +1,201 @@
+---
+title: "Program"
+page-layout: full
+---
+
+::: {.hero}
+## Program
+:::
+
+
+::: {.schedule-wrap}
+::: {.schedule-grid}
+
+<!-- ::: {.schedule-corner} -->
+<!-- Time -->
+<!-- ::: -->
+
+::: {.day-header style="grid-column: 2;"}
+**Day 1**  
+Wednesday, 23.9
+:::
+
+::: {.day-header style="grid-column: 3;"}
+**Day 2**  
+Thursday, 24.9
+:::
+
+::: {.day-header style="grid-column: 4;"}
+**Day 3**  
+Friday, 25.9
+:::
+
+<!-- Time labels: each row is a 15-minute step starting from 10:00. -->
+
+<!-- ::: {.time-label style="grid-row: 2;"} -->
+<!-- 10:00 -->
+<!-- ::: -->
+<!---->
+<!-- ::: {.time-label style="grid-row: 6;"} -->
+<!-- 11:00 -->
+<!-- ::: -->
+<!---->
+<!-- ::: {.time-label style="grid-row: 10;"} -->
+<!-- 12:00 -->
+<!-- ::: -->
+<!---->
+<!-- ::: {.time-label style="grid-row: 14;"} -->
+<!-- 13:00 -->
+<!-- ::: -->
+<!---->
+<!-- ::: {.time-label style="grid-row: 18;"} -->
+<!-- 14:00 -->
+<!-- ::: -->
+<!---->
+<!-- ::: {.time-label style="grid-row: 22;"} -->
+<!-- 15:00 -->
+<!-- ::: -->
+<!---->
+<!-- ::: {.time-label style="grid-row: 26;"} -->
+<!-- 16:00 -->
+<!-- ::: -->
+<!---->
+<!-- ::: {.time-label style="grid-row: 30;"} -->
+<!-- 17:00 -->
+<!-- ::: -->
+
+<!-- Day 1 -->
+
+::: {.schedule-event .talk style="grid-column: 2; grid-row: 3 / 8;"}
+**Introduction**   10:15–10:50  
+Simon Weinzierl
+:::
+
+::: {.schedule-event .coffee style="grid-column: 2; grid-row: 8 / 11;"}
+**Coffee break**   10:50–11:15
+:::
+
+::: {.schedule-event .talk style="grid-column: 2; grid-row: 11 / 16;"}
+**Topology Talk 1**  11:15–11:50  
+Nicolas Maduro
+:::
+
+::: {.schedule-event .lunch style="grid-column: 2; grid-row: 16 / 20;"}
+**Lunch break**  
+11:50–14:15
+:::
+
+::: {.schedule-event .talk style="grid-column: 2; grid-row: 20 / 25;"}
+**Topology Talk 2**  
+14:15–14:50  
+Speaker TBA
+:::
+
+::: {.schedule-event .coffee style="grid-column: 2; grid-row: 25 / 28;"}
+**Coffee break** 14:50–15:15
+:::
+
+::: {.schedule-event .talk style="grid-column: 2; grid-row: 28 / 33;"}
+**Talk 4**  
+15:15–15:50
+Speaker TBA
+:::
+
+::: {.schedule-event .talk style="grid-column: 2; grid-row: 33 / 38;"}
+**Talk 5**  
+15:50–16:25
+Speaker TBA
+:::
+
+<!-- Day 2 -->
+
+::: {.schedule-event .talk style="grid-column: 3; grid-row: 3 / 8;"}
+**Minilecture - Metric Algebraic Geometry**
+10:15–10:50  
+Speaker TBA
+:::
+
+::: {.schedule-event .coffee style="grid-column: 3; grid-row: 8 / 11;"}
+**Coffee break**  10:50–11:15
+:::
+
+::: {.schedule-event .talk style="grid-column: 3; grid-row: 11 / 16;"}
+**Geometry Talk 1**  
+11:15–11:50  
+Speaker TBA
+:::
+
+::: {.schedule-event .lunch style="grid-column: 3; grid-row: 16 / 20;"}
+**Lunch break**  
+11:50–14:15
+:::
+
+::: {.schedule-event .talk style="grid-column: 3; grid-row: 20 / 25;"}
+**Geometry Talk 2**  
+14:15–14:50  
+Speaker TBA
+:::
+
+::: {.schedule-event .coffee style="grid-column: 3; grid-row: 25 / 28;"}
+**Coffee break**  14:50–15:15
+:::
+
+<!-- ::: {.schedule-event .tutorial style="grid-column: 3; grid-row: 28 / 38;"} -->
+<!-- **Tutorial / Discussion**   -->
+<!-- 15:15–17:00   -->
+<!-- Topic TBA -->
+<!-- ::: -->
+
+::: {.schedule-event .talk style="grid-column: 3; grid-row: 28 / 33;"}
+**Talk 9**  
+15:15–15:50
+Speaker TBA
+:::
+
+::: {.schedule-event .talk style="grid-column: 3; grid-row: 33 / 38;"}
+**Topology Talk 3**  
+15:50–16:25
+Speaker TBA
+:::
+
+
+
+<!-- Day 3 -->
+
+::: {.schedule-event .talk style="grid-column: 4; grid-row: 3 / 8;"}
+**Talk 11**  10:15–10:50  
+Speaker TBA
+:::
+
+::: {.schedule-event .coffee style="grid-column: 4; grid-row: 8 / 11;"}
+**Coffee break**  10:50–11:15
+:::
+
+::: {.schedule-event .talk style="grid-column: 4; grid-row: 11 / 16;"}
+**Geometry Talk 3**  
+11:15–11:50  
+Speaker TBA
+:::
+
+::: {.schedule-event .lunch style="grid-column: 4; grid-row: 16 / 20;"}
+**Lunch break**  
+11:50–14:15
+:::
+
+::: {.schedule-event .talk style="grid-column: 4; grid-row: 20 / 25;"}
+**Talk 13**  
+14:15–14:50  
+Speaker TBA
+:::
+
+::: {.schedule-event .coffee style="grid-column: 4; grid-row: 25 / 28;"}
+**Coffee break**   14:50–15:15
+:::
+
+::: {.schedule-event .discussion style="grid-column: 4; grid-row: 28 / 33;"}
+**Panel Discussion**  
+15:15–17:00  
+:::
+
+:::
+::: 

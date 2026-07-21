@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "register.html",
+    "href": "register.html",
+    "title": "Registration",
+    "section": "",
+    "text": "If you wish to participate, please register by fillout out the form (not for speakers)."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Geometric Viewpoints on Learning, Data, and Neural Networks\n\nA small local meeting bringing together researchers in Munich working near geometry, topology, mathematical machine learning, and structured neural architectures.\n\n\n23-25 September 2026 · Munich\n\n\n\n This workshop explores several geometric viewpoints on machine learning, ranging from topology of data and representations to geometric and algebraic approaches to neural networks and optimization. It is aimed at advanced master students and early PhD students, and emphasizes accessible introductions to active local research directions.\n\n\nTopics\n\nGeometry and topology of data\nGeometry of representations and architectures\nGeometry and algebra of optimization and neural networks\n\n\n\n\n\n\n\n\nAudience\nAdvanced master’s students and PhD students working near geometry, topology, mathematical ML, graph learning, physics-inspired ML, and adjacent areas."
+  },
+  {
+    "objectID": "program.html",
+    "href": "program.html",
+    "title": "Program",
+    "section": "",
+    "text": "The following schedule is tentative and subject to change."
+  },
+  {
+    "objectID": "program.html#program",
+    "href": "program.html#program",
+    "title": "Program",
+    "section": "",
+    "text": "The following schedule is tentative and subject to change."
+  },
+  {
+    "objectID": "venue.html",
+    "href": "venue.html",
+    "title": "Venue",
+    "section": "",
+    "text": "The event will take place in Mathematisches Institut der LMU München (Theresienstraße 39, Munich) Room B349."
+  }
+]

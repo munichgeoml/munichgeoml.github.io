@@ -1,0 +1,51 @@
+---
+title: "Home"
+page-layout: full
+---
+
+::: {.hero}
+::: {.hero-inner}
+# Geometric Viewpoints on Learning, Data, and Neural Networks
+
+::: {.subtitle}
+A small local meeting bringing together researchers in Munich working near geometry, topology, mathematical machine learning, and structured neural architectures.
+:::
+
+::: {.meta}
+23-25 September 2026 · Munich
+:::
+
+:::
+:::
+
+<br>
+This workshop explores several geometric viewpoints on machine learning, ranging
+from topology of data and representations to geometric and algebraic approaches
+to neural networks and optimization. It is aimed at advanced master students and
+early PhD students, and emphasizes accessible introductions to active local
+research directions.
+
+::: {.card-grid}
+
+::: {.info-card}
+### Topics
+- Geometry and topology of data
+- Geometry of representations and architectures
+- Geometry and algebra of optimization and neural networks
+:::
+
+<!-- ::: {.info-card} -->
+<!-- ### Format -->
+<!---->
+<!-- Invited talks, tutorial-style sessions, and coffee breaks. -->
+<!-- ::: -->
+
+::: {.info-card}
+### Audience
+Advanced master's students and PhD students working near geometry, topology, mathematical ML,
+graph learning, physics-inspired ML, and adjacent areas.
+:::
+
+:::
+
+

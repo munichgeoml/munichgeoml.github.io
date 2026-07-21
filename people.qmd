@@ -1,0 +1,37 @@
+---
+title: "People"
+page-layout: full
+---
+
+::: {.hero}
+## People
+:::
+
+::: {.organizer-grid}
+
+::: {.organizer-card}
+[**Vittorio Guidetti**](https://www.mathematik.uni-muenchen.de/de/personen/kontaktseite/vittorio-guidetti-4ff8f4d5.html){target="_blank"}<br>
+LMU<br>
+Organizer
+:::
+
+::: {.organizer-card}
+**Chih-Chun Wang**<br>
+LMU<br>
+Organizer
+:::
+
+::: {.organizer-card}
+[**Simon Weinzierl**](https://www.mathematik.uni-muenchen.de/~weinzier/){target="_blank"}<br>
+LMU<br>
+Organizer
+:::
+
+::: {.organizer-card}
+[**Holger Rauhut**](https://www.math.lmu.de/mip/en/members/contact-page/holger-rauhut-06454077.html){target="_blank"}<br>
+LMU<br>
+Scientific Advisor
+:::
+
+
+:::
