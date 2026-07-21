@@ -84,8 +84,7 @@ Friday, 25.9
 :::
 
 ::: {.schedule-event .lunch style="grid-column: 2; grid-row: 19 / 28;"}
-**Lunch break**
-12:30–14:00
+**Lunch break** 12:30–14:00
 :::
 
 ::: {.schedule-event .talk style="grid-column: 2; grid-row: 28 / 33;"}
@@ -105,19 +104,15 @@ Friday, 25.9
 
 
 ::: {.schedule-event .talk style="grid-column: 3; grid-row: 6 / 17;"}
-**Lecture 5**
-10:00–12:00
+**Lecture 5** 10:00–12:00
 :::
 
 ::: {.schedule-event .lunch style="grid-column: 3; grid-row: 17 / 28;"}
-**Lunch break**
-12:00–14:00
+**Lunch break** 12:00–14:00
 :::
 
 ::: {.schedule-event .talk style="grid-column: 3; grid-row: 28 / 33;"}
-**Talk 6**  
-14:00–15:00  
-Speaker TBA
+**Talk 6**  14:00–15:00  
 :::
 
 ::: {.schedule-event .coffee style="grid-column: 3; grid-row: 33 / 36;"}
@@ -131,8 +126,7 @@ Speaker TBA
 <!-- ::: -->
 
 ::: {.schedule-event .talk style="grid-column: 3; grid-row: 36 / 41;"}
-**Talk 7**  
-15:30–16:30
+**Talk 7**  15:30–16:30
 :::
 
 
@@ -152,3 +146,4 @@ Speaker TBA
 
 ::: 
 
+:::
