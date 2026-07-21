@@ -147,7 +147,7 @@ Speaker TBA
 :::
 
 ::: {.schedule-event .talk style="grid-column: 4; grid-row: 14 / 19;"}
-**Talk 9**  11:15–11:50  
+**Talk 9**  11:30–12:30  
 :::
 
 ::: 
