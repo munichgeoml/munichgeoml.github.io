@@ -12,6 +12,7 @@ page-layout: full
 The event will take place in [Mathematisches Institut der LMU München (Theresienstraße 39, Munich)](https://maps.app.goo.gl/FbBq5AVWhJQc9SjM9) [Room B349](https://www.lmu.de/raumfinder/#/building/bw1003/map?room=100203349_).
 
 
+
 ![](assets/mathebau.png){fig-align="center"}
 
 
