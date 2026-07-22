@@ -22,7 +22,7 @@ University of Amsterdam<br>
 :::
 
 ::: {.organizer-card}
-[**Jakob Skarby**](https://www.jacobskarby.com/){target="_blank"}<br>
+[**Jacob Skarby**](https://www.jacobskarby.com/){target="_blank"}<br>
 Technical University of Munich<br>
 :::
 
