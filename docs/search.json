@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "venue.html",
+    "href": "venue.html",
+    "title": "Venue",
+    "section": "",
+    "text": "The event will take place in Mathematisches Institut der LMU München (Theresienstraße 39, Munich) Room B349."
+  },
+  {
     "objectID": "register.html",
     "href": "register.html",
     "title": "Registration",
@@ -19,13 +26,6 @@
     "title": "Program",
     "section": "",
     "text": "The following schedule is tentative and subject to change."
-  },
-  {
-    "objectID": "venue.html",
-    "href": "venue.html",
-    "title": "Venue",
-    "section": "",
-    "text": "The event will take place in Mathematisches Institut der LMU München (Theresienstraße 39, Munich) Room B349."
   },
   {
     "objectID": "index.html",
