@@ -1,4 +1,9 @@
+# Quarto
+**/*.quarto_ipynb
 /.quarto/
+/_site/
+
+# MacOS
 .DS_Store
 
-**/*.quarto_ipynb
+
