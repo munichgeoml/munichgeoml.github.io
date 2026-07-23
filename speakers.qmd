@@ -10,15 +10,25 @@ page-layout: full
 
 ::: {.organizer-grid}
 
+
+::: {.organizer-card}
+[**Georg Bökman**](https://georg-bn.github.io/){target="_blank"}<br>
+University of Amsterdam<br>
+:::
+
 ::: {.organizer-card}
 [**Benedikt Brantner**](https://www.ipp.mpg.de/4106005/gspm){target="_blank"}<br>
 Max Planck Institute for Plasma Physics<br>
 :::
 
+::: {.organizer-card}
+[**Thomas Dages**](https://cvg.cit.tum.de/members/dagt){target="_blank"}<br>
+Technical University of Munich<br>
+:::
 
 ::: {.organizer-card}
-[**Georg Bökman**](https://georg-bn.github.io/){target="_blank"}<br>
-University of Amsterdam<br>
+[**Pascal Esser**](https://www.ed.math.lmu.de/m/math4ai/en/members/contact-page/pascal-esser-032dce3b.html){target="_blank"}<br>
+LMU Munich<br>
 :::
 
 ::: {.organizer-card}
@@ -32,21 +42,15 @@ University of Technology Nuremberg<br>
 :::
 
 ::: {.organizer-card}
-[**Pascal Esser**](https://www.ed.math.lmu.de/m/math4ai/en/members/contact-page/pascal-esser-032dce3b.html){target="_blank"}<br>
+[**Simon Weinzierl**](https://www.math.lmu.de/mip/de/personen/kontaktseite/simon-weinzierl-26addcd7.html){target="_blank"}<br>
 LMU Munich<br>
 :::
 
 ::: {.organizer-card}
-[**Simon Weinzierl**](https://www.mathematik.uni-muenchen.de/~weinzier/){target="_blank"}<br>
+[**Ulrich Terstiege**](https://www.math.lmu.de/mip/de/personen/kontaktseite/ulrich-terstiege-1770e04a.html){target="_blank"}<br>
 LMU Munich<br>
 :::
 
-::: {.organizer-card}
-[**Thomas Dages**](https://cvg.cit.tum.de/members/dagt){target="_blank"}<br>
-Technical University of Munich<br>
-:::
 
-
-
-
+<!-- END of .organizer-grid -->
 :::
