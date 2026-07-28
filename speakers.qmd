@@ -10,6 +10,11 @@ page-layout: full
 
 ::: {.organizer-grid}
 
+::: {.organizer-card}
+[**Jonas von Berg**](https://zuseschoolrelai.de/people/scientists/jonas-von-berg/){target="_blank"}<br>
+LMU Munich<br>
+:::
+
 
 ::: {.organizer-card}
 [**Georg Bökman**](https://georg-bn.github.io/){target="_blank"}<br>
