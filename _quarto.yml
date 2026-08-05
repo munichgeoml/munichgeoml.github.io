@@ -17,6 +17,8 @@ website:
         text: Program
       - href: speakers.qmd
         text: Speakers
+      - href: abstracts.qmd
+        text: "Titles and Abstracts"
       - href: people.qmd
         text: People
       - href: venue.qmd

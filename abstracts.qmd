@@ -1,0 +1,38 @@
+---
+title: "Titles and Abstracts"
+page-layout: full
+---
+
+::: {.hero}
+## Titles and Abstracts
+:::
+
+<br>
+
+#### The Euclidean Distance Degree in Machine Learning
+
+**Speaker:** Simon Weinzierl
+
+**Abstract:**
+
+The Euclidean distance degree (EDD) of an algebraic variety $X$ counts the
+number of complex critical points of the squared distance function to a generic
+data point. It is a classical invariant that measures, in a precise algebraic
+sense, the intrinsic complexity of the nearest-point problem on $X$.
+
+In this talk, we motivate the EDD through the lens of machine learning.
+Structured model families, such as matrices of bounded rank, linear networks,
+convolutional architectures, and invariant as well as equivariant autoencoders,
+naturally define algebraic varieties, and optimizing a squared loss over them
+is exactly such a nearest-point problem.
+
+We develop the theory from first principles, connecting the EDD to classical
+invariants of $X$: its dimension, degree, and Chern classes, with the
+Catanese-Trifogli formula as a centerpiece. Along the way, we examine how
+singularities of the variety --- arising naturally from symmetry or weight
+sharing in network architectures --- complicate the picture. We also discuss
+the relationship between the complex EDD and the real geometry that
+practitioners encounter, and what this gap does and does not tell us about the
+loss landscape seen by gradient-based optimizers. 
+
+
