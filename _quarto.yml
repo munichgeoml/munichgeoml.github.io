@@ -27,7 +27,7 @@ website:
         text: Register
   page-footer:
     left: "Geometric Viewpoints on Learning, Data, and Neural Networks"
-    right: "2026 Munich"
+    right: "2026 Munich <br> Contact: munich.geoml@gmail.com"
 
 
 format:
