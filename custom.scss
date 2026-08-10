@@ -575,3 +575,86 @@ img {
 .organizer-card p {
   margin-bottom: 0.35rem;
 }
+
+/* Abstract Cards */
+
+.abstract-grid {
+  display: grid;
+  grid-template-columns: 1fr;          // phone: 1 per row
+  gap: 1rem;
+  margin-block: 2rem 2.25rem;
+
+  // break out of Quarto's narrow body column
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100vw - 1.5rem);          // phone: very thin gutters
+
+  @media (min-width: 36em) {            // ~576px
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100vw - 3rem);
+  }
+  @media (min-width: 62em) {            // ~992px
+    grid-template-columns: repeat(3, 1fr);
+    width: calc(100vw - 6rem);
+  }
+  @media (min-width: 87.5em) {          // ~1400px
+    width: min(calc(100vw - 10rem), 1700px);
+  }
+}
+
+.abstract-card {
+  padding: 0.35rem 1.6rem;
+  border: 1px solid rgba(31, 41, 51, 0.08);
+  border-radius: 18px;
+  background: rgba(250, 240, 227, 1.0);
+  box-shadow: 0 10px 28px rgba(31, 41, 51, 0.055);
+}
+
+// .abstract-card {
+//   margin-right: .5rem; 
+//   margin-left: .5rem; 
+//   padding: 0.35rem 1.6rem;
+//   border: 1px solid rgba(31, 41, 51, 0.08);
+//   border-radius: 18px;
+//   // background: rgba(255, 255, 255, 0.72);
+//   background: rgba(250, 240, 227, 1.0);
+//   box-shadow: 0 10px 28px rgba(31, 41, 51, 0.055);
+// }
+
+.abstract-card h3 {
+  margin-top: .3rem;
+  margin-bottom: 0.55rem;
+  font-size: 1.35rem;
+  letter-spacing: -0.015em;
+}
+
+.abstract-card p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  hyphens: auto;
+  // color: #4b5563;
+  // line-height: 1.65;
+}
+
+
+.abstract-card.pending {
+  display: flex;
+  align-items: center;        // vertical centering
+  justify-content: center;    // horizontal centering
+  min-height: 9rem;           // keeps it from collapsing when alone in a row
+
+  background: rgba(250, 240, 227, 0.45);
+  border-style: dashed;
+  box-shadow: none;
+}
+
+.abstract-card.pending p {
+  margin: 0;                  // override the 1rem from .abstract-card p
+  text-align: center;         // override justify
+  font-size: 1.15rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+

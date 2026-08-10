@@ -7,9 +7,105 @@ page-layout: full
 ## Titles and Abstracts
 :::
 
+
 <br>
 
-#### The Euclidean Distance Degree in Machine Learning
+::: {.abstract-grid}
+
+::: {.abstract-card}
+### The Topology and Geometry of Autoencoders
+
+**Speaker:** Jacob Skarby
+
+**Abstract:**
+
+Nonlinear dimensionality reduction methods, often also described as
+manifold learning methods, typically seek low-dimensional Euclidean
+descriptions of the input data. While these methods have proven
+effective for a wide range of datasets and applications, they come
+with a caveat: in general, manifolds with non-trivial global structure
+cannot be faithfully embedded in a single Euclidean space of their
+intrinsic dimension. As a result, methods that focus exclusively on
+visualisation may produce degenerate embeddings, while autoencoders
+may exhibit regions of high reconstruction error and unstable
+reconstructions. We address this problem with a model inspired by an
+atlas, the mathematical description of a manifold through multiple
+chart maps. To this end, we learn a mixture-of-experts model
+consisting of multiple autoencoders acting as chart maps specialised
+to a local region of the manifold that is determined by a gating
+network. The resulting collection of Euclidean latent spaces then
+captures the structure of the manifold more faithfully than a single
+latent space, as demonstrated empirically. We introduce several
+objective functions that encourage stable reconstructions and coherent
+gluing of these latent patches. This enables us to learn a
+representation of the manifold that yields interpretable
+representations while maintaining low uniform reconstruction error. We
+provide an implementation of our model and validate its effectiveness
+through a series of experiments on synthetic manifolds. Compared with
+the closely related Chart Autoencoder, our approach uses a different
+architecture and objective design and achieves improved empirical
+performance in our experiments.
+
+:::
+
+
+
+::: {.abstract-card}
+### The Polyhedral Geometry of ReLU Neural Networks and Neural Network Verification
+
+**Speaker:** Moritz Stargalla
+
+**Abstract:** 
+
+ReLU neural networks compute continuous piecewise-linear (CPWL) functions and thereby partition their input space into finitely many polyhedral linear regions, on each of which the network is affine-linear.
+
+In this talk, we first introduce the polyhedral geometry of ReLU
+networks and illustrate how this geometric viewpoint can be used to
+study questions about their expressivity. This includes questions
+about how the architecture of a network controls the number of its
+linear regions, as well as how many hidden layers are required to
+represent a given CPWL function. We then turn to the problem of neural
+network verification: given a prescribed set of inputs, does the
+network map every such input into a prescribed output set?
+
+For shallow ReLU networks, a special case of the verification problem
+(namely, deciding whether the network attains a positive value) is
+closely connected to the classical geometric problem of zonotope
+containment: deciding whether one zonotope is contained in another
+zonotope. We will explore this geometric connection in more depth and
+use it to motivate recent computational complexity results showing
+that, when parameterized by the input dimension, a simple
+enumeration-based algorithm for the verification problem is
+essentially optimal under standard complexity assumptions.
+
+:::
+
+
+::: {.abstract-card}
+### Introduction to Information Geometry
+
+**Speaker:** Pascal Esser
+
+**Abstract:**
+
+This lecture introduces information geometry as a
+differential-geometric framework for studying probability
+distributions, statistical models, and machine-learning algorithms.
+Statistical models are viewed as manifolds whose points represent
+probability distributions, with the Fisher information defining a
+canonical Riemannian metric. Building on this perspective, we
+introduce affine connections, duality, and dually flat geometry. We
+then demonstrate how these concepts clarify fundamental
+machine-learning methods, particularly natural gradient descent and
+related optimization procedures. The lecture concludes with selected
+recent developments and open research directions at the intersection
+of information geometry and machine learning.
+
+:::
+
+::: {.abstract-card}
+
+### The Euclidean Distance Degree in Machine Learning
 
 **Speaker:** Simon Weinzierl
 
@@ -35,4 +131,12 @@ the relationship between the complex EDD and the real geometry that
 practitioners encounter, and what this gap does and does not tell us about the
 loss landscape seen by gradient-based optimizers. 
 
+:::
+
+
+::: {.abstract-card .pending}
+More coming soon ...
+:::
+
+:::
 

@@ -8,7 +8,6 @@ page-layout: full
 The following schedule is tentative and subject to change.
 :::
 
-
 ::: {.schedule-wrap}
 ::: {.schedule-grid}
 

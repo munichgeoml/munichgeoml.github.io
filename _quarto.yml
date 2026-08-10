@@ -32,9 +32,9 @@ website:
 
 format:
   html:
-    include-in-header:
-      text: |
-        <meta name="robots" content="noindex, nofollow">
+    # include-in-header:
+    #   text: |
+    #     <meta name="robots" content="noindex, nofollow">
     theme:
       - cosmo
       - custom.scss
