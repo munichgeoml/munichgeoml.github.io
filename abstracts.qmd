@@ -133,6 +133,41 @@ loss landscape seen by gradient-based optimizers.
 
 :::
 
+::: {.abstract-card}
+
+### Structure-Preservation and Manifold Optimization in Deep Learning for Scientific Computing
+
+**Speaker:** Benedikt Brantner
+
+**Abstract:**
+
+Deep learning has achieved remarkable success in fields such as image
+recognition and natural language processing, driven by increasingly large
+models, abundant data, and substantial computational resources. In scientific
+computing, however, neural networks must often operate under fundamentally
+different requirements. When used to approximate or solve large-scale
+differential equations, they need to respect the mathematical structures that
+govern the underlying physical systems. Preserving properties such as energy,
+momentum, symplectic structure, or compatibility relations can be essential for
+obtaining stable and reliable long-time simulations.
+
+In this presentation, we will first review key ideas from traditional
+scientific computing and explain why structure preservation is central to
+methods such as Geometric Numerical Integration (GNI) and Finite Element
+Exterior Calculus (FEEC). We will then examine how these principles can inform
+the design of neural networks for scientific applications. Through selected
+examples, we will discuss the benefits and limitations of structure-preserving
+architectures, as well as strategies for addressing their shortcomings.
+
+Particular emphasis will be placed on training such networks, which frequently
+involves optimization over non-Euclidean spaces, or manifolds. The resulting
+interplay between geometric methods, neural networks, and manifold optimization
+is a relatively recent area of research with considerable promise. It also
+raises fundamental questions and offers numerous opportunities for future
+developments in scientific machine learning.
+
+:::
+
 
 ::: {.abstract-card .pending}
 More coming soon ...
