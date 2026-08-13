@@ -18,7 +18,6 @@ page-layout: full
 **Speaker:** Jacob Skarby
 
 **Abstract:**
-
 Nonlinear dimensionality reduction methods, often also described as
 manifold learning methods, typically seek low-dimensional Euclidean
 descriptions of the input data. While these methods have proven
@@ -56,7 +55,6 @@ performance in our experiments.
 **Speaker:** Moritz Stargalla
 
 **Abstract:** 
-
 ReLU neural networks compute continuous piecewise-linear (CPWL) functions and thereby partition their input space into finitely many polyhedral linear regions, on each of which the network is affine-linear.
 
 In this talk, we first introduce the polyhedral geometry of ReLU
@@ -87,7 +85,6 @@ essentially optimal under standard complexity assumptions.
 **Speaker:** Pascal Esser
 
 **Abstract:**
-
 This lecture introduces information geometry as a
 differential-geometric framework for studying probability
 distributions, statistical models, and machine-learning algorithms.
@@ -110,7 +107,6 @@ of information geometry and machine learning.
 **Speaker:** Simon Weinzierl
 
 **Abstract:**
-
 The Euclidean distance degree (EDD) of an algebraic variety $X$ counts the
 number of complex critical points of the squared distance function to a generic
 data point. It is a classical invariant that measures, in a precise algebraic
@@ -140,7 +136,6 @@ loss landscape seen by gradient-based optimizers.
 **Speaker:** Benedikt Brantner
 
 **Abstract:**
-
 Deep learning has achieved remarkable success in fields such as image
 recognition and natural language processing, driven by increasingly large
 models, abundant data, and substantial computational resources. In scientific
@@ -168,10 +163,39 @@ developments in scientific machine learning.
 
 :::
 
+::: {.abstract-card}
+
+### The Price of Robustness: Stable Classifiers Need Overparameterization
+
+**Speaker:** Jonas von Berg
+
+**Abstract:**
+The relationship between overparameterization stability and generalization
+remains incompletely understood for discontinuous classifiers. In this talk we
+investigate this relationship through class stability which provides a
+geometric measure of robustness. Under a concentration assumption on the data
+distribution we derive generalization bounds that improve inversely with
+stability. As a consequence we establish a law of robustness for
+classification: in the classical regime where the number of parameters (p) is
+comparable to the number of samples (n) interpolating classifiers must be
+unstable. Achieving both interpolation and high stability therefore requires
+substantial overparameterization. Unlike previous robustness laws based on
+smoothness our framework applies directly to discontinuous classifiers. We
+extend the analysis to parameterized infinite function classes through
+normalized co-stability a scale-invariant measure derived from the output
+margin. Finally experiments on MNIST and CIFAR-10 show that stability increases
+with model size and tracks test performance. This observation goes beyond our
+theoretical result: it suggests that increasing model size may itself bias
+learning toward more stable solutions, motivating further theoretical work to
+identify the mechanisms underlying this phenomenon.
+
+:::
+
 
 ::: {.abstract-card .pending}
 More coming soon ...
 :::
 
 :::
+
 
