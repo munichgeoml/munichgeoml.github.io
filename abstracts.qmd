@@ -191,6 +191,26 @@ identify the mechanisms underlying this phenomenon.
 
 :::
 
+::: {.abstract-card}
+### Equivariant Transformers
+
+**Speaker:** Georg Bökman
+
+**Abstract:**
+ Transformers are the currently dominant neural network architecture in
+ computer vision, natural language processing and several other domains. In
+ this talk, we discuss equivariant transformers. Specifically, we consider
+ equivariance under a priori given actions of a finite group on the input and
+ output of a neural network. We explain how to implement compute efficient
+ equivariant transformers via the Fourier theory of finite groups. On the image
+ classification task ImageNet-1k, our implementations yield rotation and
+ reflection equivariant vision transformers that are faster than
+ non-equivariant baselines without sacrificing classification accuracy.
+ Finally, we discuss practical and theoretical open problems in the area.
+:::
+
+
+
 
 ::: {.abstract-card .pending}
 More coming soon ...
