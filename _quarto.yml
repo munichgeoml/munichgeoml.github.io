@@ -5,6 +5,7 @@ project:
     - assets/**
 
 website:
+  site-url: https://munichgeoml.github.io
   title: "Munich Geometric ML"
   favicon: assets/icosahedron.png
   navbar:
