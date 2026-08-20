@@ -33,9 +33,9 @@ website:
 
 format:
   html:
-    # include-in-header:
-    #   text: |
-    #     <meta name="robots" content="noindex, nofollow">
+    include-in-header:
+      text: |
+        <meta name="google-site-verification" content="SREMia6tqfly-5ScfIR0XwWudgHmScf3ruUZs5RZkEU">
     theme:
       - cosmo
       - custom.scss
