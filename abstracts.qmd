@@ -209,8 +209,15 @@ identify the mechanisms underlying this phenomenon.
  Finally, we discuss practical and theoretical open problems in the area.
 :::
 
+::: {.abstract-card}
+### Gradient flow for linear neural networks
 
+**Speaker:** Ulrich Terstiege
 
+**Abstract:**
+
+TBD
+:::
 
 ::: {.abstract-card .pending}
 More coming soon ...
