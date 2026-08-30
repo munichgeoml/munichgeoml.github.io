@@ -219,9 +219,35 @@ identify the mechanisms underlying this phenomenon.
 TBD
 :::
 
-::: {.abstract-card .pending}
-More coming soon ...
+::: {.abstract-card}
+### Into the Applied Asymmetric Finsler World
+
+**Speaker:** Thomas Dages
+
+**Abstract:**
+Geometry is one of the most mature branch of mathematics and forms the core
+foundation of many modern applied problems especially in machine learning and
+computer vision. Fundamentally, geometry revolves around the concept of
+distance: given two objects, how far are they from each other? Answering this
+question becomes non-trivial on curved domains or when changing the ruler, or
+metric, at different directions or locations. Universally, such manifold
+geometry is modelled via Riemannian metrics, which generalise Euclidean uniform
+isotropy to possibly non-uniform anisotropy. While omnipresent, Riemannian
+geometry has one major limitation: it treats equally going in one direction or
+the opposite, it is symmetric. However, many natural systems are asymmetric:
+going up a mountain is harder than going down. Such asymmetry is also naturally
+present in many data systems and applied problems like directed graphs. It is
+thus absurd to constrain ourselves exclusively to Riemannian geometry. In this
+talk, we will present a brief practitioner's perspective on Finsler geometry, a
+natural asymmetric generalisation of Riemannian geometry, and see how it can be
+used very simply in different practical applications ranging from image
+processing to manifold learning.
 :::
+
+
+<!-- ::: {.abstract-card .pending} -->
+<!-- More coming soon ... -->
+<!-- ::: -->
 
 :::
 
