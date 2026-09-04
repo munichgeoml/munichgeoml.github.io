@@ -67,11 +67,12 @@ Friday, 25.9
 <!-- Day 1 -->
 
 ::: {.schedule-event .talk style="grid-column: 2; grid-row: 3 / 6;"}
-**Welcome/Introduction** [9:30–10:00]{.talk-time}<span class="talk-dot"></span>Simon Weinzierl
+**Welcome/Introduction**   9:30-10:00  
+Simon Weinzierl
 :::
 
 ::: {.schedule-event .talk style="grid-column: 2; grid-row: 6 / 19;"}
-{{< talk pascal "10:00–12:00" >}}
+**Lecture 1** 10:00-12:00
 :::
 
 ::: {.schedule-event .lunch style="grid-column: 2; grid-row: 19 / 28;"}
@@ -79,7 +80,7 @@ Friday, 25.9
 :::
 
 ::: {.schedule-event .talk style="grid-column: 2; grid-row: 28 / 33;"}
-{{< talk georg "14:00–15:00" >}}
+**Talk 2**  14:00–15:00
 :::
 
 ::: {.schedule-event .coffee style="grid-column: 2; grid-row: 33 / 36;"}
@@ -87,14 +88,14 @@ Friday, 25.9
 :::
 
 ::: {.schedule-event .talk style="grid-column: 2; grid-row: 36 / 41;"}
-{{< talk uli "15:30–16:30" >}}
+**Talk 3**  15:30–16:30
 :::
 
 <!-- Day 2 -->
 
 
 ::: {.schedule-event .talk style="grid-column: 3; grid-row: 6 / 11;"}
-{{< talk moritz "10:00–11:00" >}}
+**Talk 4**  10:00–11:00
 :::
 
 ::: {.schedule-event .coffee style="grid-column: 3; grid-row: 11 / 14;"}
@@ -102,7 +103,7 @@ Friday, 25.9
 :::
 
 ::: {.schedule-event .talk style="grid-column: 3; grid-row: 14 / 19;"}
-{{< talk simon "11:30–12:30" >}}
+**Talk 5**  11:30–12:30  
 :::
 
 ::: {.schedule-event .lunch style="grid-column: 3; grid-row: 19 / 28;"}
@@ -110,7 +111,7 @@ Friday, 25.9
 :::
 
 ::: {.schedule-event .talk style="grid-column: 3; grid-row: 28 / 33;"}
-{{< talk benedikt "14:00–15:00" >}}
+**Talk 6**  14:00–15:00  
 :::
 
 ::: {.schedule-event .coffee style="grid-column: 3; grid-row: 33 / 36;"}
@@ -124,14 +125,14 @@ Friday, 25.9
 <!-- ::: -->
 
 ::: {.schedule-event .talk style="grid-column: 3; grid-row: 36 / 41;"}
-{{< talk jonas "15:30–16:30" >}}
+**Talk 7**  15:30–16:30
 :::
 
 
 <!-- Day 3 -->
 
 ::: {.schedule-event .talk style="grid-column: 4; grid-row: 6 / 11;"}
-{{< talk jacob "10:00–11:00" >}}
+**Talk 8**  10:00–11:00
 :::
 
 ::: {.schedule-event .coffee style="grid-column: 4; grid-row: 11 / 14;"}
@@ -139,34 +140,9 @@ Friday, 25.9
 :::
 
 ::: {.schedule-event .talk style="grid-column: 4; grid-row: 14 / 19;"}
-{{< talk tom "11:30–12:30" >}}
+**Talk 9**  11:30–12:30  
 :::
 
 ::: 
 
 :::
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  var modal = document.createElement("div");
-  modal.className = "talk-modal";
-  modal.hidden = true;
-  modal.innerHTML = '<div class="talk-modal-box" role="dialog" aria-modal="true">' +
-    '<button class="talk-modal-close" aria-label="Close">&times;</button>' +
-    '<div class="talk-modal-body"></div></div>';
-  document.body.appendChild(modal);
-  var body = modal.querySelector(".talk-modal-body");
-  function close() { modal.hidden = true; }
-  modal.addEventListener("click", function (e) { if (e.target === modal) close(); });
-  modal.querySelector(".talk-modal-close").addEventListener("click", close);
-  document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
-  document.querySelectorAll(".schedule-event.talk").forEach(function (card) {
-    var abstract = card.querySelector(".talk-abstract");
-    if (!abstract) return;
-    card.addEventListener("click", function () {
-      body.innerHTML = card.querySelector("p").outerHTML + abstract.innerHTML;
-      modal.hidden = false;
-    });
-  });
-});
-</script>

@@ -4,6 +4,9 @@ project:
   resources:
     - assets/**
 
+shortcodes:
+  - talks.lua
+
 website:
   site-url: https://munichgeoml.github.io
   title: "Munich Geometric ML"

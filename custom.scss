@@ -658,3 +658,128 @@ img {
 }
 
 
+
+/* Schedule: abstract popover on hover */
+
+.schedule-event.talk {
+  position: relative;
+}
+
+.schedule-event.talk:has(.talk-abstract) {
+  cursor: pointer;
+}
+
+.schedule-event .talk-time {
+  color: #6b7280;
+}
+
+.schedule-event .talk-dot {
+  display: inline-block;
+  width: 0.3em;
+  height: 0.3em;
+  margin: 0 0.4em;
+  border-radius: 50%;
+  background: #6b7280;
+  vertical-align: middle;
+}
+
+.talk-abstract {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28rem;
+  max-height: 24rem;
+  overflow-y: auto;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(31, 41, 51, 0.15);
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(31, 41, 51, 0.18);
+  font-size: 0.85rem;
+  text-align: left;
+  cursor: auto;
+}
+
+.talk-abstract p:last-child {
+  margin-bottom: 0;
+}
+
+/* Hover popover only on devices with a mouse; touch devices use the click modal. */
+@media (hover: hover) and (pointer: fine) {
+  .schedule-event.talk:hover {
+    overflow: visible;
+    z-index: 20;
+  }
+
+  .schedule-event.talk:hover .talk-abstract {
+    display: block;
+  }
+}
+
+/* Open towards the free side: leftwards in the last column, upwards for afternoon slots. */
+.schedule-event[style*="grid-column: 4"] .talk-abstract {
+  left: auto;
+  right: 0;
+}
+
+.schedule-event[style*="grid-row: 28"] .talk-abstract,
+.schedule-event[style*="grid-row: 36"] .talk-abstract {
+  top: auto;
+  bottom: 0;
+}
+
+/* Schedule: abstract modal on click */
+
+.talk-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(31, 41, 51, 0.45);
+}
+
+.talk-modal[hidden] {
+  display: none;
+}
+
+.talk-modal-box {
+  position: relative;
+  width: 100%;
+  max-width: 40rem;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 1.5rem 1.5rem 1.25rem;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(31, 41, 51, 0.3);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.talk-modal-box strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  padding-right: 1.5rem;
+  font-size: 1.1rem;
+  color: #1f2933;
+}
+
+.talk-modal-box p:last-child {
+  margin-bottom: 0;
+}
+
+.talk-modal-close {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.7rem;
+  border: 0;
+  background: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #6b7280;
+  cursor: pointer;
+}

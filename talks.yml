@@ -1,0 +1,184 @@
+talks:
+  - id: jacob
+    speaker: "Jacob Skarby"
+    title: "The Topology and Geometry of Autoencoders"
+    abstract: |
+      Nonlinear dimensionality reduction methods, often also described as
+      manifold learning methods, typically seek low-dimensional Euclidean
+      descriptions of the input data. While these methods have proven
+      effective for a wide range of datasets and applications, they come
+      with a caveat: in general, manifolds with non-trivial global structure
+      cannot be faithfully embedded in a single Euclidean space of their
+      intrinsic dimension. As a result, methods that focus exclusively on
+      visualisation may produce degenerate embeddings, while autoencoders
+      may exhibit regions of high reconstruction error and unstable
+      reconstructions. We address this problem with a model inspired by an
+      atlas, the mathematical description of a manifold through multiple
+      chart maps. To this end, we learn a mixture-of-experts model
+      consisting of multiple autoencoders acting as chart maps specialised
+      to a local region of the manifold that is determined by a gating
+      network. The resulting collection of Euclidean latent spaces then
+      captures the structure of the manifold more faithfully than a single
+      latent space, as demonstrated empirically. We introduce several
+      objective functions that encourage stable reconstructions and coherent
+      gluing of these latent patches. This enables us to learn a
+      representation of the manifold that yields interpretable
+      representations while maintaining low uniform reconstruction error. We
+      provide an implementation of our model and validate its effectiveness
+      through a series of experiments on synthetic manifolds. Compared with
+      the closely related Chart Autoencoder, our approach uses a different
+      architecture and objective design and achieves improved empirical
+      performance in our experiments.
+  - id: moritz
+    speaker: "Moritz Stargalla"
+    title: "The Polyhedral Geometry of ReLU Neural Networks and Neural Network Verification"
+    abstract: |
+      ReLU neural networks compute continuous piecewise-linear (CPWL) functions and thereby partition their input space into finitely many polyhedral linear regions, on each of which the network is affine-linear.
+
+      In this talk, we first introduce the polyhedral geometry of ReLU
+      networks and illustrate how this geometric viewpoint can be used to
+      study questions about their expressivity. This includes questions
+      about how the architecture of a network controls the number of its
+      linear regions, as well as how many hidden layers are required to
+      represent a given CPWL function. We then turn to the problem of neural
+      network verification: given a prescribed set of inputs, does the
+      network map every such input into a prescribed output set?
+
+      For shallow ReLU networks, a special case of the verification problem
+      (namely, deciding whether the network attains a positive value) is
+      closely connected to the classical geometric problem of zonotope
+      containment: deciding whether one zonotope is contained in another
+      zonotope. We will explore this geometric connection in more depth and
+      use it to motivate recent computational complexity results showing
+      that, when parameterized by the input dimension, a simple
+      enumeration-based algorithm for the verification problem is
+      essentially optimal under standard complexity assumptions.
+  - id: pascal
+    speaker: "Pascal Esser"
+    title: "Introduction to Information Geometry"
+    abstract: |
+      This lecture introduces information geometry as a
+      differential-geometric framework for studying probability
+      distributions, statistical models, and machine-learning algorithms.
+      Statistical models are viewed as manifolds whose points represent
+      probability distributions, with the Fisher information defining a
+      canonical Riemannian metric. Building on this perspective, we
+      introduce affine connections, duality, and dually flat geometry. We
+      then demonstrate how these concepts clarify fundamental
+      machine-learning methods, particularly natural gradient descent and
+      related optimization procedures. The lecture concludes with selected
+      recent developments and open research directions at the intersection
+      of information geometry and machine learning.
+  - id: simon
+    speaker: "Simon Weinzierl"
+    title: "The Euclidean Distance Degree in Machine Learning"
+    abstract: |
+      The Euclidean distance degree (EDD) of an algebraic variety $X$ counts the
+      number of complex critical points of the squared distance function to a generic
+      data point. It is a classical invariant that measures, in a precise algebraic
+      sense, the intrinsic complexity of the nearest-point problem on $X$.
+
+      In this talk, we motivate the EDD through the lens of machine learning.
+      Structured model families, such as matrices of bounded rank, linear networks,
+      convolutional architectures, and invariant as well as equivariant autoencoders,
+      naturally define algebraic varieties, and optimizing a squared loss over them
+      is exactly such a nearest-point problem.
+
+      We develop the theory from first principles, connecting the EDD to classical
+      invariants of $X$: its dimension, degree, and Chern classes, with the
+      Catanese-Trifogli formula as a centerpiece. Along the way, we examine how
+      singularities of the variety --- arising naturally from symmetry or weight
+      sharing in network architectures --- complicate the picture. We also discuss
+      the relationship between the complex EDD and the real geometry that
+      practitioners encounter, and what this gap does and does not tell us about the
+      loss landscape seen by gradient-based optimizers.
+  - id: benedikt
+    speaker: "Benedikt Brantner"
+    title: "Structure-Preservation and Manifold Optimization in Deep Learning for Scientific Computing"
+    abstract: |
+      Deep learning has achieved remarkable success in fields such as image
+      recognition and natural language processing, driven by increasingly large
+      models, abundant data, and substantial computational resources. In scientific
+      computing, however, neural networks must often operate under fundamentally
+      different requirements. When used to approximate or solve large-scale
+      differential equations, they need to respect the mathematical structures that
+      govern the underlying physical systems. Preserving properties such as energy,
+      momentum, symplectic structure, or compatibility relations can be essential for
+      obtaining stable and reliable long-time simulations.
+
+      In this presentation, we will first review key ideas from traditional
+      scientific computing and explain why structure preservation is central to
+      methods such as Geometric Numerical Integration (GNI) and Finite Element
+      Exterior Calculus (FEEC). We will then examine how these principles can inform
+      the design of neural networks for scientific applications. Through selected
+      examples, we will discuss the benefits and limitations of structure-preserving
+      architectures, as well as strategies for addressing their shortcomings.
+
+      Particular emphasis will be placed on training such networks, which frequently
+      involves optimization over non-Euclidean spaces, or manifolds. The resulting
+      interplay between geometric methods, neural networks, and manifold optimization
+      is a relatively recent area of research with considerable promise. It also
+      raises fundamental questions and offers numerous opportunities for future
+      developments in scientific machine learning.
+  - id: jonas
+    speaker: "Jonas von Berg"
+    title: "The Price of Robustness: Stable Classifiers Need Overparameterization"
+    abstract: |
+      The relationship between overparameterization stability and generalization
+      remains incompletely understood for discontinuous classifiers. In this talk we
+      investigate this relationship through class stability which provides a
+      geometric measure of robustness. Under a concentration assumption on the data
+      distribution we derive generalization bounds that improve inversely with
+      stability. As a consequence we establish a law of robustness for
+      classification: in the classical regime where the number of parameters (p) is
+      comparable to the number of samples (n) interpolating classifiers must be
+      unstable. Achieving both interpolation and high stability therefore requires
+      substantial overparameterization. Unlike previous robustness laws based on
+      smoothness our framework applies directly to discontinuous classifiers. We
+      extend the analysis to parameterized infinite function classes through
+      normalized co-stability a scale-invariant measure derived from the output
+      margin. Finally experiments on MNIST and CIFAR-10 show that stability increases
+      with model size and tracks test performance. This observation goes beyond our
+      theoretical result: it suggests that increasing model size may itself bias
+      learning toward more stable solutions, motivating further theoretical work to
+      identify the mechanisms underlying this phenomenon.
+  - id: georg
+    speaker: "Georg Bökman"
+    title: "Equivariant Transformers"
+    abstract: |
+       Transformers are the currently dominant neural network architecture in
+       computer vision, natural language processing and several other domains. In
+       this talk, we discuss equivariant transformers. Specifically, we consider
+       equivariance under a priori given actions of a finite group on the input and
+       output of a neural network. We explain how to implement compute efficient
+       equivariant transformers via the Fourier theory of finite groups. On the image
+       classification task ImageNet-1k, our implementations yield rotation and
+       reflection equivariant vision transformers that are faster than
+       non-equivariant baselines without sacrificing classification accuracy.
+       Finally, we discuss practical and theoretical open problems in the area.
+  - id: uli
+    speaker: "Ulrich Terstiege"
+    title: "Gradient flow for linear neural networks"
+    abstract: |
+      TBD
+  - id: tom
+    speaker: "Thomas Dages"
+    title: "Into the Applied Asymmetric Finsler World"
+    abstract: |
+      Geometry is one of the most mature branch of mathematics and forms the core
+      foundation of many modern applied problems especially in machine learning and
+      computer vision. Fundamentally, geometry revolves around the concept of
+      distance: given two objects, how far are they from each other? Answering this
+      question becomes non-trivial on curved domains or when changing the ruler, or
+      metric, at different directions or locations. Universally, such manifold
+      geometry is modelled via Riemannian metrics, which generalise Euclidean uniform
+      isotropy to possibly non-uniform anisotropy. While omnipresent, Riemannian
+      geometry has one major limitation: it treats equally going in one direction or
+      the opposite, it is symmetric. However, many natural systems are asymmetric:
+      going up a mountain is harder than going down. Such asymmetry is also naturally
+      present in many data systems and applied problems like directed graphs. It is
+      thus absurd to constrain ourselves exclusively to Riemannian geometry. In this
+      talk, we will present a brief practitioner's perspective on Finsler geometry, a
+      natural asymmetric generalisation of Riemannian geometry, and see how it can be
+      used very simply in different practical applications ranging from image
+      processing to manifold learning.
