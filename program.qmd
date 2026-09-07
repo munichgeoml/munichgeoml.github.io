@@ -79,7 +79,7 @@ Friday, 25.9
 :::
 
 ::: {.schedule-event .talk style="grid-column: 2; grid-row: 28 / 33;"}
-{{< talk georg "14:00–15:00" >}}
+{{< talk uli "14:00–15:00" >}}
 :::
 
 ::: {.schedule-event .coffee style="grid-column: 2; grid-row: 33 / 36;"}
@@ -87,14 +87,14 @@ Friday, 25.9
 :::
 
 ::: {.schedule-event .talk style="grid-column: 2; grid-row: 36 / 41;"}
-{{< talk uli "15:30–16:30" >}}
+{{< talk georg "15:30–16:30" >}}
 :::
 
 <!-- Day 2 -->
 
 
 ::: {.schedule-event .talk style="grid-column: 3; grid-row: 6 / 11;"}
-{{< talk moritz "10:00–11:00" >}}
+{{< talk simon "10:00–11:00" >}}
 :::
 
 ::: {.schedule-event .coffee style="grid-column: 3; grid-row: 11 / 14;"}
@@ -102,7 +102,7 @@ Friday, 25.9
 :::
 
 ::: {.schedule-event .talk style="grid-column: 3; grid-row: 14 / 19;"}
-{{< talk simon "11:30–12:30" >}}
+{{< talk moritz "11:30–12:30" >}}
 :::
 
 ::: {.schedule-event .lunch style="grid-column: 3; grid-row: 19 / 28;"}
@@ -131,7 +131,7 @@ Friday, 25.9
 <!-- Day 3 -->
 
 ::: {.schedule-event .talk style="grid-column: 4; grid-row: 6 / 11;"}
-{{< talk jacob "10:00–11:00" >}}
+{{< talk tom "10:00–11:00" >}}
 :::
 
 ::: {.schedule-event .coffee style="grid-column: 4; grid-row: 11 / 14;"}
@@ -139,7 +139,7 @@ Friday, 25.9
 :::
 
 ::: {.schedule-event .talk style="grid-column: 4; grid-row: 14 / 19;"}
-{{< talk tom "11:30–12:30" >}}
+{{< talk jacob "11:30–12:30" >}}
 :::
 
 ::: 
