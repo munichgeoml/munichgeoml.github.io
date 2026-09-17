@@ -160,7 +160,33 @@ talks:
     speaker: "Ulrich Terstiege"
     title: "Gradient flow for linear neural networks"
     abstract: |
-      TBD
+      Gradient flow provides a tractable continuous-time model for understanding
+      the optimization of neural networks. This talk discusses convergence results
+      for different classes of linear neural networks, in particular fully connected
+      and convolutional networks, and contrasts them with phenomena that may occur
+      in more general structured linear networks and nonlinear networks.
+      
+      Even for fully connected deep linear networks, the parameter-space optimization
+      problem is non-convex because the end-to-end linear map is represented as
+      a product of weight matrices. Nevertheless, under a mild non-degeneracy
+      assumption on the data, gradient-flow trajectories remain bounded and converge
+      to critical points of the empirical loss. For almost every initialization,
+      the limiting end-to-end map is optimal among matrices of its attained rank.
+      For balanced networks, the induced evolution of the end-to-end matrix can
+      moreover be interpreted as a Riemannian gradient flow on a manifold of
+      fixed-rank matrices.
+      
+      A similar convergence result holds for linear convolutional networks:
+      under a mild non-degeneracy assumption on the data, gradient flow converges
+      to a critical point for every initialization. While the fully connected
+      analysis relies on matrix-factorization arguments and conserved Gram-matrix
+      differences, the convolutional case exploits polynomial factorization together
+      with conserved differences of layer norms.
+
+      Finally, the talk discusses to what extent such convergence results persist
+      for more general structured linear networks and suitable nonlinear networks.
+      In these broader settings, boundedness of the parameter trajectory can fail:
+      gradient flow may escape to infinity even while the loss converges to its infimum.
   - id: tom
     speaker: "Thomas Dages"
     title: "Into the Applied Asymmetric Finsler World"
