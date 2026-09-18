@@ -16,7 +16,7 @@ Organizer
 :::
 
 ::: {.organizer-card}
-**Chih-Chun Wang**<br>
+[**Chih-Chun Wang**](https://ch-wang.com/)<br>
 LMU<br>
 Organizer
 :::
