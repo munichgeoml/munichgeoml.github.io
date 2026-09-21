@@ -121,27 +121,48 @@ talks:
       raises fundamental questions and offers numerous opportunities for future
       developments in scientific machine learning.
   - id: jonas
-    speaker: "Jonas von Berg"
-    title: "The Price of Robustness: Stable Classifiers Need Overparameterization"
+    speaker: "Jonas Bresch"
+    title: "Generalized Normalized Radon Cumulative Distribution Transform for Pattern Recognition"
     abstract: |
-      The relationship between overparameterization stability and generalization
-      remains incompletely understood for discontinuous classifiers. In this talk we
-      investigate this relationship through class stability which provides a
-      geometric measure of robustness. Under a concentration assumption on the data
-      distribution we derive generalization bounds that improve inversely with
-      stability. As a consequence we establish a law of robustness for
-      classification: in the classical regime where the number of parameters (p) is
-      comparable to the number of samples (n) interpolating classifiers must be
-      unstable. Achieving both interpolation and high stability therefore requires
-      substantial overparameterization. Unlike previous robustness laws based on
-      smoothness our framework applies directly to discontinuous classifiers. We
-      extend the analysis to parameterized infinite function classes through
-      normalized co-stability a scale-invariant measure derived from the output
-      margin. Finally experiments on MNIST and CIFAR-10 show that stability increases
-      with model size and tracks test performance. This observation goes beyond our
-      theoretical result: it suggests that increasing model size may itself bias
-      learning toward more stable solutions, motivating further theoretical work to
-      identify the mechanisms underlying this phenomenon.
+      The Radon cumulative distribution transform (R-CDT) [[3]](https://doi.org/10.1109/TIP.2015.2509419) exploits
+      one-dimensional Wasserstein transport and the Radon transform [[1]](https://doi.org/10.1109/TMI.1986.4307775) to
+      represent prominent features in images. It is closely related to the sliced
+      Wasserstein distance and facilitates classification tasks, especially in
+      the small data regime, like the recognition of watermarks in filigranology
+      [[4]](https://doi.org/10.1007/978-3-031-70543-4_6). Here, a typical issue is that the given data may be subject to affine
+      transformations caused by the measuring process. To make the R-CDT
+      invariant under arbitrary affine transformations, a two-step normalization
+      of the R-CDT has been proposed in our earlier works [[2]](https://arxiv.org/abs/2411.16282). Here, firstly, we
+      propose a family of generalized normalizations to enhance flexibility for
+      applications. Second, we study multi-dimensional and non-Euclidean settings
+      by making use of generalized Radon transforms. We prove that our novel
+      feature representations are invariant under certain transformations and
+      allow for linear separation in feature space. Our theoretical results are
+      supported by numerical experiments based on 2d images, 3d shapes and 3d
+      rotation matrices, showing near perfect classification accuracies and
+      clustering results.
+
+    # speaker: "Jonas von Berg"
+    # title: "The Price of Robustness: Stable Classifiers Need Overparameterization"
+    # abstract: |
+    #   The relationship between overparameterization stability and generalization
+    #   remains incompletely understood for discontinuous classifiers. In this talk we
+    #   investigate this relationship through class stability which provides a
+    #   geometric measure of robustness. Under a concentration assumption on the data
+    #   distribution we derive generalization bounds that improve inversely with
+    #   stability. As a consequence we establish a law of robustness for
+    #   classification: in the classical regime where the number of parameters (p) is
+    #   comparable to the number of samples (n) interpolating classifiers must be
+    #   unstable. Achieving both interpolation and high stability therefore requires
+    #   substantial overparameterization. Unlike previous robustness laws based on
+    #   smoothness our framework applies directly to discontinuous classifiers. We
+    #   extend the analysis to parameterized infinite function classes through
+    #   normalized co-stability a scale-invariant measure derived from the output
+    #   margin. Finally experiments on MNIST and CIFAR-10 show that stability increases
+    #   with model size and tracks test performance. This observation goes beyond our
+    #   theoretical result: it suggests that increasing model size may itself bias
+    #   learning toward more stable solutions, motivating further theoretical work to
+    #   identify the mechanisms underlying this phenomenon.
   - id: georg
     speaker: "Georg Bökman"
     title: "Equivariant Transformers"
