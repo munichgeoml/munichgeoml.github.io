@@ -5,7 +5,6 @@ page-layout: full
 
 ::: {.hero}
 ## Program
-The following schedule is tentative and subject to change.
 :::
 
 ::: {.schedule-wrap}
