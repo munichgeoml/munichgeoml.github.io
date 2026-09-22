@@ -11,7 +11,7 @@ page-layout: full
 ::: {.organizer-grid}
 
 ::: {.organizer-card}
-[**Jonas von Berg**](https://zuseschoolrelai.de/people/scientists/jonas-von-berg/){target="_blank"}<br>
+[**Jonas Bresch**](https://www.user.tu-berlin.de/jonasbresch/){target="_blank"}<br>
 LMU Munich<br>
 :::
 
