@@ -19,6 +19,7 @@ local function load_talks()
       speaker = pandoc.utils.stringify(t.speaker),
       title = t.title,
       abstract = t.abstract,
+      slides = t.slides and pandoc.utils.stringify(t.slides) or nil,
     }
     if entry.abstract.t == "MetaInlines" then
       entry.abstract = pandoc.Blocks({ pandoc.Para(entry.abstract) })
@@ -58,10 +59,13 @@ local function abstracts(args, kwargs, meta)
     else
       body:insert(1, pandoc.Para(label))
     end
-    cards:insert(pandoc.Div(pandoc.Blocks({
-      pandoc.Header(3, t.title, { id = id }),
-      pandoc.Para({ pandoc.Strong("Speaker:"), pandoc.Space(), pandoc.Str(t.speaker) }),
-    }) .. body, { class = "abstract-card" }))
+    local head = pandoc.Blocks({ pandoc.Header(3, t.title, { id = id }) })
+    if t.slides then
+      head:insert(pandoc.Para(pandoc.Link("slides", t.slides, "",
+        { class = "btn btn-sm btn-outline-primary", target = "_blank", rel = "noopener" })))
+    end
+    head:insert(pandoc.Para({ pandoc.Strong("Speaker:"), pandoc.Space(), pandoc.Str(t.speaker) }))
+    cards:insert(pandoc.Div(head .. body, { class = "abstract-card" }))
   end
   return pandoc.Div(cards, { class = "abstract-grid" })
 end

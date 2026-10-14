@@ -1,6 +1,7 @@
 talks:
   - id: jacob
     speaker: "Jacob Skarby"
+    slides: assets/slides/jacob.pdf
     title: "The Topology and Geometry of Autoencoders"
     abstract: |
       Nonlinear dimensionality reduction methods, often also described as
@@ -31,6 +32,7 @@ talks:
       performance in our experiments.
   - id: moritz
     speaker: "Moritz Stargalla"
+    slides: assets/slides/moritz.pdf
     title: "The Polyhedral Geometry of ReLU Neural Networks and Neural Network Verification"
     abstract: |
       ReLU neural networks compute continuous piecewise-linear (CPWL) functions and thereby partition their input space into finitely many polyhedral linear regions, on each of which the network is affine-linear.
@@ -55,6 +57,7 @@ talks:
       essentially optimal under standard complexity assumptions.
   - id: pascal
     speaker: "Pascal Esser"
+    slides: assets/slides/pascal.pdf
     title: "Introduction to Information Geometry"
     abstract: |
       This lecture introduces information geometry as a
@@ -71,6 +74,7 @@ talks:
       of information geometry and machine learning.
   - id: simon
     speaker: "Simon Weinzierl"
+    slides: assets/slides/simon.pdf
     title: "The Euclidean Distance Degree in Machine Learning"
     abstract: |
       The Euclidean distance degree (EDD) of an algebraic variety $X$ counts the
@@ -94,6 +98,7 @@ talks:
       loss landscape seen by gradient-based optimizers.
   - id: benedikt
     speaker: "Benedikt Brantner"
+    slides: assets/slides/benedikt.pdf
     title: "Structure-Preservation and Manifold Optimization in Deep Learning for Scientific Computing"
     abstract: |
       Deep learning has achieved remarkable success in fields such as image
@@ -122,6 +127,7 @@ talks:
       developments in scientific machine learning.
   - id: jonas
     speaker: "Jonas Bresch"
+    slides: assets/slides/jonas.pdf
     title: "Generalized Normalized Radon Cumulative Distribution Transform for Pattern Recognition"
     abstract: |
       The Radon cumulative distribution transform (R-CDT) [[3]](https://doi.org/10.1109/TIP.2015.2509419) exploits
@@ -165,6 +171,7 @@ talks:
     #   identify the mechanisms underlying this phenomenon.
   - id: georg
     speaker: "Georg Bökman"
+    slides: assets/slides/georg.pdf
     title: "Equivariant Transformers"
     abstract: |
        Transformers are the currently dominant neural network architecture in
@@ -179,6 +186,7 @@ talks:
        Finally, we discuss practical and theoretical open problems in the area.
   - id: uli
     speaker: "Ulrich Terstiege"
+    slides: assets/slides/ulrich.pdf
     title: "Gradient flow for linear neural networks"
     abstract: |
       Gradient flow provides a tractable continuous-time model for understanding
