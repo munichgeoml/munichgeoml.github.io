@@ -1,7 +1,6 @@
 talks:
   - id: jacob
     speaker: "Jacob Skarby"
-    slides: assets/slides/jacob.pdf
     title: "The Topology and Geometry of Autoencoders"
     abstract: |
       Nonlinear dimensionality reduction methods, often also described as
